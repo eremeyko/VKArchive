@@ -21,7 +21,7 @@ ____
 ## Получение токена
 Для работы необходим любой токен с доступом к messages.
 
-Просто возьмите токен от [Kate Mobile (*клик*)](https://oauth.vk.com/authorize?client_id=2685278&scope=1073737727&redirect_uri=https://oauth.vk.com/blank.html&display=page&response_type=token&revoke=1)
+Просто возьмите токен от [vk.com (*клик*)](https://oauth.vk.com/authorize?client_id=6287487&scope=1073737727&redirect_uri=https://oauth.vk.com/blank.html&display=page&response_type=token&revoke=1)
 ____
 ## Запуск
 Дабл-клик по bat-нику.

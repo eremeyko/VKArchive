@@ -42,11 +42,10 @@ def getChats(token, i, days):
                 data={"offeset": i, "count": 200, "access_token": token, "v": 5.174},
             ).json()
 
-            if days == 0:
-                for j in chats["response"]["items"]:
+            for j in chats["response"]["items"]:
+                if days == 0:
                     conversations_id.append(j["conversation"]["peer"]["id"])
-            else:
-                for j in chats["response"]["items"]:
+                else:
                     timeback = int(time()) - int(j["last_message"]["date"])
                     if timeback > days:
                         conversations_id.append(j["conversation"]["peer"]["id"])
@@ -102,8 +101,6 @@ def archiveChats(token, conversations_id, welcome_text):
                     f"{welcome_text}[•] Всего чатов: {len(conversations_id)}\n ├[v] Заархивировано:\t{successful_archive}\n ├[o] Уже в архиве:\t{already_in_archive}\n └[f] Флуд контроль:\t{flood_control}"
                 )
                 sleep(10)
-            else:
-                pass
         else:
             successful_archive += 1
             system("cls")

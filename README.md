@@ -22,6 +22,7 @@ ____
 Для работы необходим любой токен с доступом к messages.
 
 Просто возьмите токен от [vk.com (*клик*)](https://oauth.vk.com/authorize?client_id=6287487&scope=1073737727&redirect_uri=https://oauth.vk.com/blank.html&display=page&response_type=token&revoke=1)
+
 Токеном будет являться часть от `https://oauth.vk.com/blank.html#access_token=` до `&expires_in=86400...`
 ____
 ## Запуск

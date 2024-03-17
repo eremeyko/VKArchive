@@ -11,7 +11,7 @@
 4. [Информатион](https://github.com/eremeyko/VKArchive#%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BE%D0%BD)
 ____
 ## Установка библиотеки
-Для работы требуется только библиотека requests
+Для работы требуется только библиотека requests, но перед началось убедитесь, что вы установили Python не ниже версии 3.8!
 
 Открываем консоль и вводим:
 ```
@@ -22,6 +22,7 @@ ____
 Для работы необходим любой токен с доступом к messages.
 
 Просто возьмите токен от [vk.com (*клик*)](https://oauth.vk.com/authorize?client_id=6287487&scope=1073737727&redirect_uri=https://oauth.vk.com/blank.html&display=page&response_type=token&revoke=1)
+Токеном будет являться часть от `https://oauth.vk.com/blank.html#access_token=` до `&expires_in=86400...`
 ____
 ## Запуск
 Дабл-клик по bat-нику.
